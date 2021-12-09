@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  background: linear-gradient(to right, black 70%, gold);
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 80px;
+  align-items: center;
+}
+/* h1 {
+  color: gold;
+  font-family: "Courier New", Courier, monospace;
+  margin-right: 40px;
+} */
+.judul {
+  width: 200px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.judul .loginless {
+  font-size: 30px;
+  background-color: rey;
+  color: gold;
+  font-family: "De Valencia";
+  text-decoration: none;
+}
+nav .menu {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+
+  margin-top: 12px;
+}
+nav .menu li {
+  margin-top: 5px;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+nav .menu li a {
+  color: gold;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 9px 5px 9px 5px;
+  box-sizing: border-box;
+  font-family: De Valencia;
+}
+/* nav .menu li:hover {
+  background-color: gold;
+} */
+nav .menu li a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: gold;
+  transition: 0.5s;
+  border-radius: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* Dropdown */
+
+.profil {
+  width: 160px;
+  height: 58%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  position: relative;
+  left: 100px;
+  z-index: 1001;
+}
+.fotoProf {
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/blank.png);
+  background-size: cover;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.fotoProf .foto {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.namaProf {
+  font-size: 15px;
+  color: white;
+  margin-top: 6px;
+}
+.dropbar {
+  width: 15px;
+  height: 14px;
+  background-image: url(../img/segitiga.png);
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  transform: rotate(180deg);
+  position: relative;
+  top: 9px;
+  left: 2px;
+  /* border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 10%; */
+
+  cursor: pointer;
+}
+
+.ulDrop {
+  width: 100px;
+  background-color: rgba(110, 110, 110, 0.9);
+  right: 23px;
+  top: 46px;
+  position: absolute;
+  display: none;
+  z-index: 1000;
+}
+.ulDrop .liDrop {
+  color: black;
+  list-style: none;
+}
+.ulDrop .liDrop .link2 {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+.ulDrop .liDrop .login:hover {
+  color: lime;
+}
+.ulDrop .liDrop .register:hover {
+  color: gold;
+}
+.ulDrop .liDrop .uploadFoto:hover {
+  color: rgb(142, 208, 230);
+}
+.ulDrop .liDrop .logout:hover {
+  color: rgb(255, 0, 0);
+}
+/* responsive */
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+/* mobile */
+@media screen and (max-width: 576px) {
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    background-color: orangered;
+    width: 80%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: 1.5s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .hamburger.transform {
+    transform: scale(0.9);
+  }
+  body.black {
+    background-color: black;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+  }
+  .hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: wheat;
+    border-radius: 3px;
+  }
+}
