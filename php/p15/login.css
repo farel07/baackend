@@ -1,0 +1,48 @@
+body{
+    background-image: url(img/space.jpg);
+    background-size: cover;
+}
+
+.login {
+    width: 300px;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    height: 300px;
+    margin: auto;
+    border: 5px solid rgb(208, 208, 219);
+    border-radius: 15%;
+}
+ li{
+    position: relative;
+    top: 50px;
+    list-style: none;
+ }
+
+ .username input{
+     height: 30px;
+     border:3px solid rgb(255, 183, 183);
+     padding-left:30px ;
+ }
+ .username{
+    padding-left: 5px;
+ }
+ .pass input{
+     height: 30px;
+     border:3px solid rgb(255, 183, 183);
+     padding-left:30px ;
+ }
+ .pass{
+     padding-top: 10px;
+     padding-left: 5px;
+ }
+ .button button{
+     height: 30px;
+     width: 75px;
+     background-color: rgb(240, 255, 154);
+     border:3px solid rgb(255, 189, 7);
+ }
+
+.register{
+    position: relative;
+    bottom: -130px;
+}

@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    background-color: #495866;
+    
+    
+}
+.container{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    color: gold;
+}
+table{
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #b5d4f1;
+    border:10px solid #739dc3;
+     box-shadow: 0px 9px 5px 2px;
+}
+.tambahData a{
+    margin-left: 150px;
+    margin-top: 10px;
+   background-color: #7dc0ff;
+   text-decoration: none;
+   padding: 10px;
+   border: 2px solid gold;
+}
+
+table tr td img{
+    box-sizing: border-box;
+margin-right: -20px;
+margin-left: 30px;
+
+}
+
+.action button{
+    background-color:#62b3ff;
+    width: 59px;
+    height: 23px;
+    margin-right: -15px;
+    margin-left: 13px;
+    border: 1px solid #003363;
+    
+}
+.action a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #00417e;
+    font-weight: bold;
+    
+}
+.action button:hover{
+    background-color:#c1e1ff;
+   
+}
+.action button:visited{
+    background-color:rgb(167, 3, 167);;
+}
+
+
