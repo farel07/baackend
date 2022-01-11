@@ -15,8 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body>  
 
+    <a href="sog_update.php?id=<?= $id; ?>">edit data</a>
+
+    <a href="sog_delete.php?id=<?= $id; ?>"onclick ="return confirm('ingin menghapus data?');">hapus data</a>
+    <a href="index.php">kembali</a>
     <table border="1" cellspacing="0" cellpadding="10px">
 
         <tr>
